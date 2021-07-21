@@ -15,10 +15,8 @@ spec:
     spec:
       containers:
         - name: frontend-container
-          image: nginx:42.geek
+          image: nginx
   selector:
     matchLabels:
       type: frontend
-  strategy:
-    type: Recreate
   replicas: 6
